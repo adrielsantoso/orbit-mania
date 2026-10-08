@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+# Player high scores (normally stored outside the project; see scores.py)
+highscores.json
+highscores.tmp

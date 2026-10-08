@@ -1,0 +1,29 @@
+[project]
+name = "orbit-mania"
+version = "1.0.0"
+description = "An arcade game about switching orbits around a planet, written with Pygame"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pygame>=2.5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+orbit-mania = "orbit_mania.app:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+orbit_mania = ["assets/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+# Headless test runs have no GPU; the game falls back to software scaling.
+filterwarnings = ["ignore:no fast renderer available"]
