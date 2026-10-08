@@ -3,6 +3,7 @@ name = "orbit-mania"
 version = "1.0.0"
 description = "An arcade game about switching orbits around a planet, written with Pygame"
 readme = "README.md"
+authors = [{ name = "Adriel Imaran Santoso" }]
 requires-python = ">=3.10"
 dependencies = ["pygame>=2.5"]
 
