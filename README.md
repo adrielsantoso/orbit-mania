@@ -36,7 +36,7 @@ don't run out of fuel. Your score is how long you survive.
 Requires Python 3.10 or newer.
 
 ```bash
-git clone https://github.com/adibatic/orbit-mania.git
+git clone https://github.com/adrielsantoso/orbit-mania.git
 cd orbit-mania
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
